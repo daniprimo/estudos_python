@@ -18,8 +18,7 @@
                 </section>
                 <section class="galeria">
 
-
-                    <di class="cards">
+                    <div class="cards">
                         <h2 class="cards__titulo">Navegue pela galeria</h2>
                         <ul class="cards__lista">
                             {% for foto_id, info in cards.items %}
@@ -38,9 +37,9 @@
                                     </div>
                                 </div>
                             </li>
+                            {% endfor %}
                         </ul>
-                    </di v>
-                    {% endfor %}
+                    </div >
                 </section>
             </section>
         </main>
