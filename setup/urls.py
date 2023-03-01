@@ -18,9 +18,11 @@ from django.urls import path
 from .Views import hello
 from .Views import articles
 from .Views import fname
+from .Views import fname2
+
 
 urlpatterns = [
-    path('pessoa/<str:nome>/', fname),
+    path('pessoa/<str:nome>/', fname2),
     path('hello/', hello),
     path('articles/<int:years>/', articles),
     path('admin/', admin.site.urls),
